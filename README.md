@@ -1,2 +1,2 @@
-# MisGafas-
+# MisGafas
 Proyecto Final Diplomado iOS
