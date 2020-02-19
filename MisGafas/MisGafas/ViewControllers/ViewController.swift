@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet weak var messageLabel: UILabel!
     
+    var anchorNode: SCNNode?
+    
     var session: ARSession {
         return sceneView.session
     }
@@ -25,6 +27,8 @@ class ViewController: UIViewController {
             updateMessage(text: "Face Tracking is not supported")
             return
         }
+        
+        updateMessage(text: "Choose a product")
         
         setupScene()
         //createFaceGeometry()
@@ -65,15 +69,21 @@ extension ViewController: ARSCNViewDelegate {
     
     func sessionInterruptionEnded(_ session: ARSession) {
     updateMessage(text: "Session interruption ended.") }
+    
+    //Anchor Node, ARNodeTracking
+    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) { //(_didAdd:for:) gets called for each anchor added to the scene
+        anchorNode = node
+        //setUpNodeContent()
+    }
 }
 
 private extension ViewController {
     
     //Update label message
     func updateMessage(text: String) {
-        DispatchQueue.main.sync {
-            self.messageLabel.text = text
-        }
+      DispatchQueue.main.async {
+        self.messageLabel.text = text
+      }
     }
     
     //Setup scene
