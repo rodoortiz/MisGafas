@@ -40,9 +40,9 @@ class ViewController: UIViewController {
         }
         
         updateMessage(text: "Choose a product")
-        
+        contentTypeSelected = .none
         setupScene()
-        //createFaceGeometry()
+        createFaceGeometry()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -67,6 +67,32 @@ class ViewController: UIViewController {
         
         sceneView.session.pause()
     }
+    
+    @IBAction func didTapModel1(_ sender: Any) {
+        updateMessage(text: "Model 1")
+        contentTypeSelected = .model1
+        resetTracking()
+    }
+    
+    @IBAction func didTapModel2(_ sender: Any) {
+        updateMessage(text: "Model 2")
+        contentTypeSelected = .model2
+        resetTracking()
+    }
+    
+    @IBAction func didTapModel3(_ sender: Any) {
+        updateMessage(text: "Model 3")
+        contentTypeSelected = .model3
+        resetTracking()
+    }
+    
+    @IBAction func didTapBuy(_ sender: Any) {
+    }
+    
+    @IBAction func didTapPhoto(_ sender: Any) {
+    }
+    
+    
 }
 
 extension ViewController: ARSCNViewDelegate {
@@ -145,7 +171,7 @@ private extension ViewController {
     }
     
     //CreateARSCNFaceGeometry
-    func createFaceGeoemtry() {
+    func createFaceGeometry() {
         
         let device = sceneView.device!
         

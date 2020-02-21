@@ -10,6 +10,7 @@
 		4D26615D23FDA966009742A1 /* Model_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D26615C23FDA966009742A1 /* Model_1.swift */; };
 		4D26615F23FDA979009742A1 /* Model_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D26615E23FDA979009742A1 /* Model_2.swift */; };
 		4D26616123FDA984009742A1 /* Model_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D26616023FDA984009742A1 /* Model_3.swift */; };
+		4DD430AF24004C4900CA550D /* SunglassesModels.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD430AE24004C4900CA550D /* SunglassesModels.scnassets */; };
 		4DE4367D23F1CC0D00CE0D1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE4367C23F1CC0D00CE0D1B /* AppDelegate.swift */; };
 		4DE4367F23F1CC0D00CE0D1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE4367E23F1CC0D00CE0D1B /* SceneDelegate.swift */; };
 		4DE4368123F1CC0D00CE0D1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE4368023F1CC0D00CE0D1B /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 		4D26615C23FDA966009742A1 /* Model_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model_1.swift; sourceTree = "<group>"; };
 		4D26615E23FDA979009742A1 /* Model_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model_2.swift; sourceTree = "<group>"; };
 		4D26616023FDA984009742A1 /* Model_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model_3.swift; sourceTree = "<group>"; };
+		4DD430AE24004C4900CA550D /* SunglassesModels.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = SunglassesModels.scnassets; sourceTree = "<group>"; };
 		4DE4367923F1CC0D00CE0D1B /* MisGafas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MisGafas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE4367C23F1CC0D00CE0D1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DE4367E23F1CC0D00CE0D1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				4DE4367C23F1CC0D00CE0D1B /* AppDelegate.swift */,
 				4DE4367E23F1CC0D00CE0D1B /* SceneDelegate.swift */,
 				4DE4368223F1CC0D00CE0D1B /* Main.storyboard */,
+				4DD430AE24004C4900CA550D /* SunglassesModels.scnassets */,
 				4DE4368523F1CC1200CE0D1B /* Assets.xcassets */,
 				4DE4368723F1CC1200CE0D1B /* LaunchScreen.storyboard */,
 				4DE4368A23F1CC1200CE0D1B /* Info.plist */,
@@ -153,6 +156,7 @@
 				4DE4368923F1CC1200CE0D1B /* LaunchScreen.storyboard in Resources */,
 				4DE4368623F1CC1200CE0D1B /* Assets.xcassets in Resources */,
 				4DE4368423F1CC0D00CE0D1B /* Main.storyboard in Resources */,
+				4DD430AF24004C4900CA550D /* SunglassesModels.scnassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

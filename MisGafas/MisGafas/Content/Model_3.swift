@@ -22,7 +22,7 @@ class SunglassesModel3: SCNNode {
         
         addChildNode(occlusionNode) //Add occlusionNode to the scene
         
-        guard let url = Bundle.main.url(forResource: "", withExtension: "", subdirectory: "") else {
+        guard let url = Bundle.main.url(forResource: "sunglasses3", withExtension: "scn", subdirectory: "SunglassesModels.scnassets/Model3") else {
             fatalError("Missing source")
         } //Check to make sure xxx.scn exists in the main bundle.
         

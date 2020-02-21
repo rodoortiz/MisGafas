@@ -30,7 +30,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Cnj-ol-ld8"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -44,6 +44,9 @@
                                 <state key="normal" image="camera.circle" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="38" scale="large" weight="bold"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uLf-XZ-Aci"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v93-Nl-vPM">
                                 <rect key="frame" x="55" y="778" width="304" height="46"/>
@@ -55,6 +58,9 @@
                                 <state key="normal" title="BUY">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapBuy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Fa-Uo-MMV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCG-DV-zG2">
                                 <rect key="frame" x="55" y="702" width="75" height="68"/>
@@ -67,6 +73,9 @@
                                 <state key="normal" title="1">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapModel1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="itI-w8-PUO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6W-Lb-0M4">
                                 <rect key="frame" x="170" y="702" width="75" height="68"/>
@@ -79,6 +88,9 @@
                                 <state key="normal" title="2">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapModel2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7UB-Pu-Msj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muG-dc-yxS">
                                 <rect key="frame" x="284" y="702" width="75" height="68"/>
@@ -91,6 +103,9 @@
                                 <state key="normal" title="3">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapModel3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jCG-3g-9VK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
