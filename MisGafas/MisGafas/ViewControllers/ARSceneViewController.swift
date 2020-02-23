@@ -16,7 +16,7 @@ enum ContentType: Int {
     case model3
 }
 
-class ViewController: UIViewController {
+class ARSceneViewController: UIViewController {
 
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet weak var messageLabel: UILabel!
@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     var model1: SunglassesModel1? //Variable for the glasses 1
     var model2: SunglassesModel2? //Variable for the glasses 2
     var model3: SunglassesModel3? //Variable for the glasses 3
+    var takenPhoto: UIImage? //Variable for the taken photo
     
     var session: ARSession {
         return sceneView.session
@@ -90,12 +91,21 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didTapPhoto(_ sender: Any) {
+        takenPhoto = sceneView.snapshot()
+        
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "photo" {
+            let destinationVC = segue.destination as! SnapshotViewController
+            if let photo = takenPhoto {
+                destinationVC.photo = photo
+            }
+        }
+    }
 }
 
-extension ViewController: ARSCNViewDelegate {
+extension ARSceneViewController: ARSCNViewDelegate {
     
     //ARSession Handling
     func session(_ session: ARSession, didFailWithError error: Error) {
@@ -105,7 +115,7 @@ extension ViewController: ARSCNViewDelegate {
     updateMessage(text: "Session interrupted.") }
     
     func sessionInterruptionEnded(_ session: ARSession) {
-    updateMessage(text: "Session interruption ended.") }
+    updateMessage(text: "Choose a product") }
     
     //Anchor Node, ARNodeTracking
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) { //(_didAdd:for:) gets called for each anchor added to the scene
@@ -137,7 +147,7 @@ extension ViewController: ARSCNViewDelegate {
     }
 }
 
-private extension ViewController {
+private extension ARSceneViewController {
     
     //Update label message
     func updateMessage(text: String) {
