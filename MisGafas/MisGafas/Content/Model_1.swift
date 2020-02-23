@@ -12,6 +12,7 @@ import SceneKit
 class SunglassesModel1: SCNNode {
     
     let occlusionNode: SCNNode
+    var model = String("Model 1")
     
     init(geometry: ARSCNFaceGeometry) { //Takes the user’s face geometry as a parameter
         geometry.firstMaterial!.colorBufferWriteMask = []

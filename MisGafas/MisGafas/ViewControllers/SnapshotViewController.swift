@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 class SnapshotViewController: UIViewController {
     
     var photo: UIImage?

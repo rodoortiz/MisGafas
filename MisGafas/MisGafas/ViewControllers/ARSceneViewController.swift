@@ -9,12 +9,12 @@
 import UIKit
 import ARKit
 
-enum ContentType: Int {
-    case none
-    case model1
-    case model2
-    case model3
-}
+//enum ContentType: Int {
+//    case none
+//    case model1
+//    case model2
+//    case model3
+//}
 
 class ARSceneViewController: UIViewController {
 
@@ -22,7 +22,7 @@ class ARSceneViewController: UIViewController {
     @IBOutlet weak var messageLabel: UILabel!
     
     var anchorNode: SCNNode?
-    var contentTypeSelected: ContentType = .none //Variable to track the selection
+    var contentTypeSelected: Content = .none //Variable to track the selection
     var model1: SunglassesModel1? //Variable for the glasses 1
     var model2: SunglassesModel2? //Variable for the glasses 2
     var model3: SunglassesModel3? //Variable for the glasses 3
@@ -92,15 +92,18 @@ class ARSceneViewController: UIViewController {
     
     @IBAction func didTapPhoto(_ sender: Any) {
         takenPhoto = sceneView.snapshot()
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "photo" {
             let destinationVC = segue.destination as! SnapshotViewController
             if let photo = takenPhoto {
-                destinationVC.photo = photo
+                destinationVC.photo = photo //Sending thru segue the photo
             }
+        }
+        if segue.identifier == "buy" {
+            let destinationVC = segue.destination as! BuyViewController
+            destinationVC.contentTypeSelected = contentTypeSelected //Sending thru segue the contentType status
         }
     }
 }
