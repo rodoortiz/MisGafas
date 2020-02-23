@@ -12,6 +12,7 @@
 		4D26616123FDA984009742A1 /* Model_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D26616023FDA984009742A1 /* Model_3.swift */; };
 		4D606CEC2401E4C100F8ABD6 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D606CEB2401E4C100F8ABD6 /* BuyViewController.swift */; };
 		4D6EEDD02402387900AFBD21 /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6EEDCF2402387900AFBD21 /* ContentType.swift */; };
+		4D6EEDD22403170400AFBD21 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6EEDD12403170400AFBD21 /* CheckoutViewController.swift */; };
 		4DD430AF24004C4900CA550D /* SunglassesModels.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD430AE24004C4900CA550D /* SunglassesModels.scnassets */; };
 		4DD430B12400616100CA550D /* SnapshotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD430B02400616100CA550D /* SnapshotViewController.swift */; };
 		4DE4367D23F1CC0D00CE0D1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE4367C23F1CC0D00CE0D1B /* AppDelegate.swift */; };
@@ -28,6 +29,7 @@
 		4D26616023FDA984009742A1 /* Model_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model_3.swift; sourceTree = "<group>"; };
 		4D606CEB2401E4C100F8ABD6 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
 		4D6EEDCF2402387900AFBD21 /* ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
+		4D6EEDD12403170400AFBD21 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		4DD430AE24004C4900CA550D /* SunglassesModels.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = SunglassesModels.scnassets; sourceTree = "<group>"; };
 		4DD430B02400616100CA550D /* SnapshotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotViewController.swift; sourceTree = "<group>"; };
 		4DE4367923F1CC0D00CE0D1B /* MisGafas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MisGafas.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,7 @@
 				4DE4368023F1CC0D00CE0D1B /* ARSceneViewController.swift */,
 				4DD430B02400616100CA550D /* SnapshotViewController.swift */,
 				4D606CEB2401E4C100F8ABD6 /* BuyViewController.swift */,
+				4D6EEDD12403170400AFBD21 /* CheckoutViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				4D26615D23FDA966009742A1 /* Model_1.swift in Sources */,
 				4DE4367D23F1CC0D00CE0D1B /* AppDelegate.swift in Sources */,
 				4DE4367F23F1CC0D00CE0D1B /* SceneDelegate.swift in Sources */,
+				4D6EEDD22403170400AFBD21 /* CheckoutViewController.swift in Sources */,
 				4D6EEDD02402387900AFBD21 /* ContentType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
