@@ -28,7 +28,9 @@ class SnapshotViewController: UIViewController {
             ac.addAction(UIAlertAction(title: "OK", style: .default))
         } else {
             let ac = UIAlertController(title: "Saved!", message: "Your photo has been saved to your photos", preferredStyle: .alert)
-            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            ac.addAction(UIAlertAction(title: "OK", style: .default){ (UIAlertAction) -> Void in
+                   self.dismiss(animated: true, completion: nil)
+            })
             present(ac, animated: true)
         } //Alerts when saving photo
     }
