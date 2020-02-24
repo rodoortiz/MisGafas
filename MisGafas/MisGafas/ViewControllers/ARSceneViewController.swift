@@ -36,7 +36,7 @@ class ARSceneViewController: UIViewController {
         super.viewDidLoad()
         
         guard ARFaceTrackingConfiguration.isSupported else {
-            updateMessage(text: "Face Tracking is not supported")
+            updateMessage(text: "Device not supported")
             return
         }
         
@@ -172,7 +172,7 @@ private extension ARSceneViewController {
     //FaceTracking Configuration
     func resetTracking() {
         guard ARFaceTrackingConfiguration.isSupported else {
-            updateMessage(text: "Face Tracking not supported")
+            updateMessage(text: "Device not supported")
             return
         }
         
